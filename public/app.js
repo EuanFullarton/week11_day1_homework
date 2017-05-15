@@ -1,5 +1,5 @@
   var CATS_ARRAY = [
-  { name: "Archie", fav_food: "Mice", picture_link: "http://kittytonpost.com/wp-content/uploads/2013/09/cute-cat-funny.jpg" }
+  { name: "Archie", fav_food: "Mice", picture_link: "http://kittytonpost.com/wp-content/uploads/2013/09/cute-cat-funny.jpg" }, { name: "Tom", fav_food: "Jerry", picture_link: "https://s-media-cache-ak0.pinimg.com/originals/a7/8c/12/a78c12e2f0f4a2a3cb6914e799bdc15c.jpg"}
   ];
 
 
@@ -12,6 +12,7 @@
  var createCatName = function(name){
   var catName = document.createElement("li");
   catName.innerText = "Name: " + name;
+  catName.classList.add("cat");
   return catName;
 }
 
@@ -23,7 +24,7 @@ var createCatFood = function(fav_food){
 
 var createCatPic = function(picture_link){
   var catPic = document.createElement("li");
-  catPic.innerHTML = "<img src= " + '"' + picture_link + '"' + "/>";
+  catPic.innerHTML = "<img width='500' src= " + '"' + picture_link + '"' + "/>";
   return catPic;
 
 }
@@ -31,7 +32,6 @@ var createCatPic = function(picture_link){
 var appendCatElements = function(cats, catContainer, catName, catFood, catPic){
   catContainer.appendChild(catName);
   catContainer.appendChild(catFood);
-  // catContainer.appendChild(catPic);
   cats.appendChild(catContainer);
 }
 

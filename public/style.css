@@ -6,3 +6,22 @@
 .red-quote{
   color: red;
 }
+
+body{
+  background-color: tomato;
+  color: white; 
+  font-family: arial;
+}
+
+.cat {
+  list-style-type: none;
+  margin-left:10%;
+  padding:1em;
+}
+
+img {
+  border-radius: 25%;
+  border: 5px solid white;
+  height:25%;
+  width:25%;
+}
